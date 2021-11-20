@@ -10,9 +10,5 @@ import java.util.Optional;
 public interface UrlRepository extends JpaRepository<Url , Integer> {
     Optional<Url> findByShortUrl(String url);
 
-    /*
-    @Query(value = "SELECT origin_url FROM urls  where users.id LIKE  %?1%", nativeQuery = true)
-    Url showLinks(int user_id);
 
-     */
 }
